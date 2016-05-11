@@ -15,7 +15,6 @@ button{
     position: absolute;
     bottom: 20px;
     right: 56px;
-    line-height: 56px;
     min-width: 0;
     width: 56px;
     height: 56px;
@@ -24,7 +23,7 @@ button{
     border-radius: 50%;
     background-clip: padding-box;
     overflow: hidden;
-    background-color: rgb(255,82,82);
+    background-color: white;
     color: rgb(255,255,255);
         letter-spacing: .010em;
         outline: 0;
@@ -32,6 +31,21 @@ button{
         align-items: center;
     padding: 0 6px;
     margin: 6px 8px;
+    cursor: pointer;
+}
+button img{
+    position: absolute;
+    top: 14px;
+    height: 28px;
+    left: 14px;
+}
+button span{
+        bottom: 0px;
+    position: absolute;
+    display: block;
+    left: 20px;
+    color: black;
+    font-size: 8px;
 }
 
 input[type="search"]{
@@ -95,4 +109,15 @@ label[for="city"]{
 
 .pac-item-query {
     font-size: 15px;
+}
+
+.gpsLoading img{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from {opacity:0;}
+    to {opacity:1;}
 }

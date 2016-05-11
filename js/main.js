@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	};
 	
 	checkURL();
+	toggleClearBtn();
 	
 	// set map height
 	document.querySelector("#map").style.height = document.body.clientHeight +"px";
@@ -158,13 +159,14 @@ function getGPS() {
 
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(showPosition, showError);
+		document.querySelector("button").classList.add('gpsLoading');
 	} else {
 		console.log("Geolocation is not supported by this browser! Change browser or device please :)");
 	}
 }
 
 function showPosition(position) {
-
+	document.querySelector("button").classList.remove('gpsLoading');
 	console.log("Position GPS OK.");
 	console.log(position);
 
@@ -211,6 +213,7 @@ function updateDraw() {
 }
 
 function showError(error) {
+	document.querySelector("button").classList.remove('gpsLoading');
 	switch (error.code) {
 		case error.PERMISSION_DENIED:
 			console.log("User denied the request for Geolocation.");
