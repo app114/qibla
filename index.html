@@ -45,9 +45,9 @@
         <button>GPS</button>
         
         <div id="searchBox"><!--
-            --><label for="city">🔍</label><!--
-            --><input type="search" id="city" placeholder="Paris, NYC, ..."/><!--
-            --><label for="city"   id="reset" onclick="document.querySelector('#city').value = ''">❌</label><!--
+            --><label for="city" title="Search">🔍</label><!--
+            --><input type="search" id="city" placeholder="Paris, NYC, ..." onchange="toggleClearBtn()"/><!--
+            --><label for="city"  title="Reset" id="reset" onclick="document.querySelector('#city').value = ''">❌</label><!--
     --></div>
 
         <script src="js/plugins.js"></script>

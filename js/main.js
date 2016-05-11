@@ -271,3 +271,12 @@ function checkURL(){
 		getGPS();
 	}
 }
+
+
+function toggleClearBtn(){
+	if(document.getElementById("city").value == ""){
+		document.getElementById("reset").style.visibility = "hidden";
+	}else{
+		document.getElementById("reset").style.visibility = "visible";
+	}
+}
