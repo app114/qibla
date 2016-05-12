@@ -11,27 +11,39 @@ html, body{
     left: 0;
 }
 
+
 button{
     position: absolute;
     bottom: 20px;
     right: 56px;
+    z-index: 5;
     min-width: 0;
     width: 56px;
     height: 56px;
     vertical-align: middle;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.45), inset 0 0 0 transparent;
     border-radius: 50%;
     background-clip: padding-box;
     overflow: hidden;
     background-color: white;
-    color: rgb(255,255,255);
-        letter-spacing: .010em;
-        outline: 0;
+    color: rgb(255,255,255);https://app114.github.io/qibla/img/ic_my_location_black_48px.svg
+    letter-spacing: .010em;
+    outline: 0;
     border: 0;
-        align-items: center;
+    align-items: center;
     padding: 0 6px;
     margin: 6px 8px;
     cursor: pointer;
+    transition : 0.15s ease-out;
+}
+
+button:hover,button:focus  {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.45), inset 0 0 0 transparent;
+}
+
+button:active  {
+    transition : 0s ease-out;
+    box-shadow: 0 0 0 transparent, inset 0 5px 5px 0 rgba(0, 0, 0, 0.45);
 }
 button img{
     position: absolute;
