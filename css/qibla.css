@@ -21,12 +21,14 @@ button{
     width: 56px;
     height: 56px;
     vertical-align: middle;
+    background: white url("../img/ic_my_location_black_48px.svg") center no-repeat;
+    background-size: 28px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.45), inset 0 0 0 transparent;
     border-radius: 50%;
     background-clip: padding-box;
     overflow: hidden;
     background-color: white;
-    color: rgb(255,255,255);https://app114.github.io/qibla/img/ic_my_location_black_48px.svg
+    color: rgb(255,255,255);
     letter-spacing: .010em;
     outline: 0;
     border: 0;
