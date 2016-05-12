@@ -125,10 +125,11 @@ label[for="city"]{
     font-size: 15px;
 }
 
-.gpsLoading img{
+.gpsLoading{
     animation-name: blink;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes blink {
