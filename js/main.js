@@ -231,8 +231,10 @@ function showError(error) {
 }
 
 function updateURL(label, lat,lng, zoom){
-	document.location.hash = label.replace(/ /ig,"_").replace(/[^a-zA-Z_\-0-9]+/g,'')
-								+"_/"+lat +"/"+ lng+"/"+zoom;
+	history.replaceState("", "", "#"+label.replace(/ /ig,"_").replace(/[^a-zA-Z_\-0-9]+/g,'')
+								+"_/"+lat +"/"+ lng+"/"+zoom);
+	/*document.location.hash = label.replace(/ /ig,"_").replace(/[^a-zA-Z_\-0-9]+/g,'')
+								+"_/"+lat +"/"+ lng+"/"+zoom;*/
 }
 
 
