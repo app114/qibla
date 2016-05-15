@@ -1,6 +1,6 @@
 {
-  "short_name": "QMap",
-  "name": "Qibla via Google Maps",
+  "short_name": "QiblaMap",
+  "name": "🕋 QiblaMap🚩",
   "icons": [
     {
       "src": "img/QiblaMaps_icon48.png",
@@ -18,5 +18,5 @@
   "start_url": "index.html",
   "background_color": "#B2D0FE",
   "display": "standalone",
-  "theme_color": "#B2D0FE"
+  "theme_color": "#ff5722"
 }
