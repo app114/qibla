@@ -4,64 +4,13 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>🕋 QiblaMap 🚩</title>
-        <meta name="description" content="">
-       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-        <meta name="theme-color" content="#ff5722">
-        <!-- Windows Phone -->
-        <meta name="msapplication-navbutton-color" content="#ff5722">
-        <!-- iOS Safari -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-        <link rel="apple-touch-icon" href="img/QiblaMaps_icon144.png">
-        <!-- Place favicon.ico in the root directory -->
-        
-        <link rel="manifest" href="manifest.json">
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/qibla.css">
-        <link rel="icon" href="img/QiblaMaps_icon144.png"/>
-        
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@IslamAgendaFr">
-        <meta name="twitter:creator" content="@IslamAgendaFr">
-        <meta name="twitter:title" content="🕋 QiblaMap">
-        <meta name="twitter:description" content="QiblaMap helps you find the Qibla anywhere on earth">
-        <meta name="twitter:image" content="img/paris.png">
-        
+ 
         <script>
-        // Don't force http when serving the website locally
-        if ((window.location.hostname != "127.0.0.1" && window.location.hostname != "localhost") && (window.location.protocol != "https:"))
-            window.location.protocol = "https";
+            window.location.protocol = "https://qiblamap.github.io";
         </script>
     </head>
-    <!--
-        👔 Developed with a keyboard by @bilelz
-        🌍 : www.bilelz.fr
-        if you like it, you can pay me a 🍵 www.paypal.me/bilelz/1
-    -->
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <button><span>GPS</span></button>
-        
-        <div id="searchBox"><!--
-            --><label for="city" title="Search">🔍</label><!--
-            --><input type="search" id="city" placeholder="Paris, NYC, ..." oninput="toggleClearBtn()"/><!--
-            --><label for="city"  title="Reset" id="reset" onclick="document.querySelector('#city').value = '';toggleClearBtn()">❌</label><!--
-    --></div>
-    
-        <div id="map">&nbsp;</div>
-        
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP2Yl-F7Uplk_lC60ry-6MjigRDF-lii4&callback=initializeMap&libraries=places"></script>        
-
+        <h1><a href="https://qiblamap.github.io">qiblamap.github.io</a></h1>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -73,20 +22,5 @@
             ga('send', 'pageview');
 
         </script>   
-        
-        <script type="application/ld+json">
-        {
-            "@context": "http://schema.org/",
-            "@type": "Product",
-            "name": "🕋 QiblaMap",
-            "image": "img/paris.png",
-            "description": "QiblaMap helps you find the Qibla anywhere on earth",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5",
-                "reviewCount": "1"
-            }
-        }
-        </script>
     </body>
 </html>
